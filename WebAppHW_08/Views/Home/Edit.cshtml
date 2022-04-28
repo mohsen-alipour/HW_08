@@ -1,0 +1,15 @@
+﻿@model PersonModel
+
+<form class="row g-3">
+<div class="mb-3">
+  <label for="formGroupExampleInput" class="form-label">شناسه کالا</label>
+  <input type="text" class="form-control" asp-for=Id readonly="readonly" >
+</div>
+<div class="mb-3">
+  <label for="formGroupExampleInput2" class="form-label">نام کالا</label>
+  <input type="text" class="form-control" asp-for=Name>
+</div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary" asp-controller="Home" asp-action="Edit" formmethod="post">ذخیره</button>
+  </div>
+</form>
